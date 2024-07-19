@@ -1,39 +1,12 @@
 # Remix + Tailwind + Typescript + Vite!
 
-📖 See the [Remix docs](https://remix.run/docs) and the [Remix Vite docs](https://remix.run/docs/en/main/guides/vite) for details on supported features.
+This template use openapi-ts and remix to build SEO oriented websites.
 
 ## Development
 
-Run the Vite dev server:
+First edit `openapi-ts-config.ts`
 
 ```shellscript
-npm run dev
+pnpm run codegen
+pnpm run dev
 ```
-
-## Deployment
-
-First, build your app for production:
-
-```sh
-npm run build
-```
-
-Then run the app in production mode:
-
-```sh
-pnpm start
-pnpm start
-pnpm start
-
-```
-
-Now you'll need to pick a host to deploy it to.
-
-### DIY
-
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
