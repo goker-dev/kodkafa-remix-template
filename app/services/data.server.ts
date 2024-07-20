@@ -1,3 +1,15 @@
+export const navigation = [
+  {
+    text: "GOKER",
+    to: "/goker",
+  },
+  {
+    text: "NOTES",
+    to: "/@goker",
+    icon: "icon-note",
+  },
+];
+
 export async function getLinks() {
   return {
     linkedin: "https://www.linkedin.com/in/gokercebeci/",

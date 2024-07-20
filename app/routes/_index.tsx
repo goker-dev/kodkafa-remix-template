@@ -16,7 +16,11 @@ export const meta: MetaFunction = () => {
 };
 
 export async function loader() {
-  const tags = await notesControllerGetTagCloud();
+  const tags = await notesControllerGetTagCloud().catch((err) => {
+    throw new Response(String(err), {
+      status: 500,
+    });
+  });
   return json({ tags, meta: {} });
 }
 
